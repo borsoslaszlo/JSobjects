@@ -57,13 +57,10 @@ class  Message {
  */
 
 
-
-
-
 function Message () {
-		this.result="##Result##:\n";
-		this.reason="##Reason##:\n";
-		this.achievement="##How to possibly achieve remediation by the automaton:##\n";
+	this.result="##Result##:\n";
+	this.reason="##Reason##:\n";
+	this.achievement="##How to possibly achieve remediation by the automaton:##\n";
 	this.getResult  =  function (){
 		return this.result ;
 		};
@@ -72,10 +69,7 @@ function Message () {
 		};
 	this.getAllVars = function (){
 		return this.getResult() + this.getReason() +this.getAchievement();
-		
-		
 	}
-		
 	this.getAchievement=function (){
 		return this.achievement;
 		};
@@ -103,9 +97,8 @@ function Message () {
 	this.addToAchievement = function (str_to_be_added){
 		this.achievement = this.achievement + str_to_be_added;
 	}
-
 	
-	}
+}
 
 var myMessage = new Message ();
 
